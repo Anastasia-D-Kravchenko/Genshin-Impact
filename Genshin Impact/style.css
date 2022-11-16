@@ -437,7 +437,6 @@ ul{
 	flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-	justify-content: center;
 }
 #mm{
 	display: flex;
