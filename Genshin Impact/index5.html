@@ -83,6 +83,34 @@
 .add_data:hover{
     color: #a6f6cf;
 }
+.form{
+        position: fixed;
+        margin: -2%;
+        margin-left: -9%;
+        width: 10%;
+    }
+    .gradient-button_01 {
+    margin: 0;
+    background: #232734a3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    font-size: larger;
+    transform: rotate(180deg);
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #40af87 0%, #a6f4cc 51%, #40af87 100%);
+    background-size: 200% auto;
+    transition: .5s;
+    }
+    .gradient-button_01:after{
+        content: "\27A0"; 
+    }
+    .gradient-button_01:hover{
+      background-position: right center;
+    }
     @media screen and (max-width: 700px) {
       .osnova{
 			margin: 0;
@@ -157,6 +185,14 @@
   .want{
     width: 37%;
     }
+    .gradient-button_01{
+      padding: 14px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .form{
+      margin-top: -7%;
+    }
     }
     @media screen and (max-width: 380px) {
       #pers1{
@@ -182,6 +218,11 @@
   cursor: pointer;"><button class="gradient-button effect effect-5" type="submit">Continue</button></div> -->
   <div class="want">Wishes granted)</div>
 <header id="header">
+  <div>
+    <form action="index4.html" class="form">
+        <button class="gradient-button_01" type="submit" style="margin: 0;position:absolute;"></button>
+    </form>
+</div>
   <nav>
     <div><img id="logot_svet" src="img/Site-logo.png">
     <img id="logot_temno" src="img/Site-logo2.png"></div>

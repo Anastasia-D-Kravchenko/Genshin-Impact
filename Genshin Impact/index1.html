@@ -20,6 +20,46 @@
 	margin-left: 30%;
 	margin-top: 17%;
 }
+.form{
+        position: fixed;
+        margin: -2%;
+        margin-left: -9%;
+        width: 10%;
+    }
+    .gradient-button_01 {
+    margin: 0;
+    background: #232734a3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    font-size: larger;
+    transform: rotate(180deg);
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #010123 0%, #7cc8f9 51%, #010123 100%);
+    background-size: 200% auto;
+    transition: .5s;
+    }
+    .gradient-button_01:after{
+        content: "\27A0"; 
+    }
+    .gradient-button_01:hover{
+      background-position: right center;
+    }
+    @media screen and (max-width: 450px) {
+    .gradient-button_01{
+      padding: 14px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .form{
+      margin-top: -8%;
+      margin-left: -12%;
+      z-index: 1;
+    }
+    }
   @media screen and (max-width: 700px) {
         :root{
         height: 4600px;
@@ -52,7 +92,7 @@
         }
         .gradient-button{
           margin-left: 20%;
-        margin-top: 105%;
+            margin-top: 97%;
         }
     }
     @media screen and (max-width: 379px) and (min-width: 329px) {
@@ -60,8 +100,8 @@
             height: 4700px;
         }
         .gradient-button{
-          margin-left: 20%;
-        margin-top: 115%;
+          margin-left: 15%;
+          margin-top: 111%;
         }
     }
     @media screen and (max-width: 325px){
@@ -70,13 +110,13 @@
         }
         .gradient-button{
           margin-left: 10%;
-          margin-top: 150%;
+          margin-top: 133%;
         }
     }
 @media screen and (min-width: 1300px){
 	.gradient-button{
-		margin-left: 35%;
-    margin-top: 30%;
+		margin-left: 30%;
+    margin-top: 25%;
 	}
   :root {
     height: 8600px;
@@ -88,6 +128,11 @@
 </style>
 <body>
 <header id="header">
+  <div>
+    <form action="index.html" class="form">
+        <button class="gradient-button_01" type="submit" style="margin: 0;position:absolute;border: none;"></button>
+    </form>
+</div>
   <nav>
     <div><img id="logot_svet" src="img/Site-logo.png">
     <img id="logot_temno" src="img/Site-logo2.png"></div>
@@ -107,7 +152,7 @@
     <!-- <button class="temno" onclick="cli()"><img src="img/pngwing.com (1).png" id="ty"></button>
   <button class="svet" onclick="cli1()"><img src="img/57d9848d083d815729adc6ea.png" id="ty"></button> -->
   </nav>
-  <h1 style="margin-top:10%;margin-left: 13%;line-height: 140%;">Genshin Impact 3.0:<br>new region,<br>elements and characters</h1></h1>
+  <h1 style="margin-top:10%;margin-left: 10%;line-height: 140%;">Genshin Impact 3.0:<br>new region,<br>elements and characters</h1></h1>
   <div class="osnova">
     <div>
       <form action="index3.html">

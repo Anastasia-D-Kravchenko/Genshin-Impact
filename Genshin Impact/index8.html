@@ -12,7 +12,7 @@
 </head>
 <style>
   :root{
-    height: 1100px;
+    height: 1500px;
     width: 100%;
     color: #000001;
   }
@@ -49,13 +49,62 @@
   #im{
     border-radius: 9999px;
   }
+  .form{
+        position: fixed;
+        margin: -2%;
+        margin-left: -9%;
+        width: 10%;
+    }
+    ::-webkit-scrollbar {
+    width: 18px;/*вертикальний */
+    height: 10px;/*горизонтальний */
+    background-color: #bb5113;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #fca670;
+    border-radius: 6px;
+}
+  .gradient-button_01 {
+    margin: 0;
+    background: #232734a3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    font-size: larger;
+    transform: rotate(180deg);
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #c9550d 0%, #ffa870 51%, #c9550d 100%);
+    background-size: 200% auto;
+    transition: .5s;
+    }
+    .gradient-button_01:after{
+        content: "\27A0"; 
+    }
+    .gradient-button_01:hover{
+      background-position: right center;
+    }
+    @media screen and (max-width: 450px) {
+    .gradient-button_01{
+      padding: 14px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .form{
+      margin-top: -7%;
+    }
+    }
   @media screen and (max-width: 700px) {
       .osnova{
 			margin: 0;
       margin-top: 45%;
 		}
     :root{
-      height: 945px;
+      height: 1200px;
       margin-left: -1%;
     margin-top: -1%;
     }
@@ -97,6 +146,11 @@
 </style>
 <body>
 <header id="header">
+  <div>
+  <form action="index4.html" class="form">
+      <button class="gradient-button_01" type="submit" style="margin: 0;position:absolute;"></button>
+  </form>
+</div>
   <nav>
     <div><img id="logot_svet" src="img/Site-logo.png">
     <img id="logot_temno" src="img/Site-logo2.png"></div>
@@ -117,36 +171,49 @@
     <!-- <button class="temno" onclick="cli()"><img src="img/pngwing.com (1).png" id="ty"></button>
     <button class="svet" onclick="cli1()"><img src="img/57d9848d083d815729adc6ea.png" id="ty"></button> -->
   </nav>
-  <h1 style="margin-top: 14%;color: #08e5ff;;margin-left: 10%;line-height: 140%;display: flex;align-items: center;position: absolute;"><img src="img/Hydro.png" style="padding-right: 5%;">Hydro Characters</h1>
+  <h1 style="margin-top: 14%;color: #ffa970;;;margin-left: 10%;line-height: 140%;display: flex;align-items: center;position: absolute;"><img src="img/Pyro.png" style="padding-right: 5%;">Pyro Characters</h1>
   <div class="osnova">
     <div id="pers1">
-      <img src="img/tartaglia_portrait.jpg" id="im">
-      <h3>Tartaglia</h3>
+      <img src="img/hu_tao_portrait.jpg" id="im">
+      <h3>Hu Tao</h3>
     </div>
     <div id="pers1">
-      <img src="img/kamisato_ayato_portrait.jpg" id="im">
-      <h3>Ayato</h3>
+      <img src="img/diluc_portrait.jpg" id="im">
+      <h3>Diluc</h3>
     </div>
     <div id="pers1">
-      <img src="img/sangonomiya_kokomi_portrait.jpg" id="im">
-      <h3>Kokomi</h3>
+      <img src="img/klee_portrait.jpg" id="im">
+      <h3>Klee</h3>
     </div>
     <div id="pers1">
-      <img src="img/yelan_portrait.jpg" id="im">
-      <h3>Yelan</h3>
+      <img src="img/yoimiya_portrait.jpg" id="im">
+      <h3>Yoimiya</h3>
     </div>
     <div id="pers1">
-      <img src="img/mona_portrait.jpg" id="im">
-      <h3>Mona</h3>
+      <img src="img/yanfei_portrait.jpg" id="im">
+      <h3>Yanfei</h3>
     </div>
     <div id="pers1">
-      <img src="img/xingqiu_portrait.jpg" id="im">
-      <h3>Xingqiu</h3>
+      <img src="img/xinyan_portrait.jpg" id="im">
+      <h3>Xinyan</h3>
     </div>
-    <div id="pers1" style="margin-left: 8%">
-      <img src="img/barbara_portrait.jpg" id="im">
-      <h3>Barbara</h3>
+    <div id="pers1">
+      <img src="img/xiangling_portrait.jpg" id="im">
+      <h3>Xiangling</h3>
     </div>
+    <div id="pers1">
+      <img src="img/thoma_portrait.jpg" id="im">
+      <h3>Thoma</h3>
+    </div>
+    <div id="pers1">
+      <img src="img/amber_portrait.jpg" id="im">
+      <h3>Amber</h3>
+    </div>
+    <div id="pers1">
+      <img src="img/bennett_portrait.jpg" id="im">
+      <h3>Bennett</h3>
+    </div>
+    <div>
       <form action="index4.html">
         <button class="gradient-button" type="submit">Continue</button>
       </form>

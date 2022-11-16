@@ -12,7 +12,7 @@
 </head>
 <style>
   :root{
-    height: 1000px;
+    height: 1100px;
     width: 100%;
     color: #000001;
   }
@@ -24,6 +24,45 @@
   .gradient-button{
     background-image: linear-gradient(to right, #9EEFE1 0%, #010101 51%, #9EEFE1 100%);
   }
+  .form{
+        position: fixed;
+        margin: -2%;
+        margin-left: -9%;
+        width: 10%;
+    }
+    ::-webkit-scrollbar {
+    width: 18px;/*вертикальний */
+    height: 10px;/*горизонтальний */
+    background-color: #cd8b0a;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #f3d661;
+    border-radius: 6px;
+}
+  .gradient-button_01 {
+    margin: 0;
+    background: #232734a3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    font-size: larger;
+    transform: rotate(180deg);
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #aa7a18 0%, #f5d761 51%, #aa7a18  100%);
+    background-size: 200% auto;
+    transition: .5s;
+    }
+    .gradient-button_01:after{
+        content: "\27A0"; 
+    }
+    .gradient-button_01:hover{
+      background-position: right center;
+    }
   .osnova{
     display: flex;
     flex-direction: row;
@@ -49,13 +88,23 @@
   #im{
     border-radius: 9999px;
   }
+  @media screen and (max-width: 450px) {
+    .gradient-button_01{
+      padding: 14px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .form{
+      margin-top: -7%;
+    }
+    }
   @media screen and (max-width: 700px) {
       .osnova{
 			margin: 0;
       margin-top: 45%;
 		}
     :root{
-      height: 600px;
+      height: 960px;
       margin-left: -1%;
     margin-top: -1%;
     }
@@ -97,6 +146,11 @@
 </style>
 <body>
 <header id="header">
+  <div>
+  <form action="index4.html" class="form">
+      <button class="gradient-button_01" type="submit" style="margin: 0;position:absolute;"></button>
+  </form>
+</div>
   <nav>
     <div><img id="logot_svet" src="img/Site-logo.png">
     <img id="logot_temno" src="img/Site-logo2.png"></div>
@@ -116,25 +170,44 @@
     <!-- <button class="temno" onclick="cli()"><img src="img/pngwing.com (1).png" id="ty"></button>
     <button class="svet" onclick="cli1()"><img src="img/57d9848d083d815729adc6ea.png" id="ty"></button> -->
   </nav>
-  <h1 style="margin-top: 14%;color: #b0e82a;margin-left: 10%;line-height: 140%;display: flex;align-items: center;position: absolute;"><img src="img/Dendro.png" style="padding-right: 5%;">Dendro Characters</h1>
+  <h1 style="margin-top: 14%;color: #f5d761;;margin-left: 10%;line-height: 140%;display: flex;align-items: center;position: absolute;"><img src="img/Geo.png" style="padding-right: 5%;">Geo Characters</h1>
   <div class="osnova">
     <div id="pers1">
-      <img src="img/tighnari_portrait.jpg" id="im">
-      <h3>Tignary</h3>
+      <img src="img/zhongli_portrait.jpg" id="im">
+      <h3>Zhongli</h3>
     </div>
     <div id="pers1">
-      <img src="img/collei_portrait.jpg" id="im">
-      <h3>Colliery</h3>
+      <img src="img/arataki_itto_portrait.jpg" id="im">
+      <h3>Itto</h3>
     </div>
     <div id="pers1">
+      <img src="img/albedo_portrait.jpg" id="im">
+      <h3>Albedo</h3>
+    </div>
+    <div id="pers1">
+      <img src="img/ningguang_portrait.jpg" id="im">
+      <h3>Ningguang</h3>
+    </div>
+    <div id="pers1">
+      <img src="img/noelle_portrait.jpg" id="im">
+      <h3>Noelle</h3>
+    </div>
+    <div id="pers1">
+      <img src="img/gorou_portrait.jpg" id="im">
+      <h3>Gorou</h3>
+    </div>
+    <div id="pers1" style="margin-left: 8%">
+      <img src="img/yun_jin_portrait.jpg" id="im">
+      <h3>Yun Jin</h3>
+    </div>
+    <div id="pers1" style="margin-left: 8%">
       <img src="img/traveler_anemo_portrait.jpg" id="im">
-      <h3>Traveller<br>(Dendro)</h3>
+      <h3 style="text-align: center;">Traveller<br>(Geo)</h3>
     </div>
-    <div>
-      <form action="index4.html">
-        <button class="gradient-button" type="submit">Continue</button>
-      </form>
-    </div>
+    <form action="index4.html">
+      <button class="gradient-button" type="submit">Continue</button>
+    </form>
+  </div>
 </header>
 <main>
   <div class="blokT"></div>

@@ -13,6 +13,7 @@
 <style>
     :root{
         height: 2000px;
+        margin: -2%;
     }
     #im{
         background-image: url(https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/bg_5star.png?strip=all&quality=100);
@@ -42,6 +43,46 @@
     }
     .asdqwe{
         width: 410px;justify-content: space-around;
+    }
+    #cto{
+    display: flex;
+    flex-direction: row;
+	padding-right: 2%;
+    padding-top: 2%;
+}
+#logot_svet{
+	width: 25%;
+    display: block;
+    float: left;
+	padding-left: 12%;
+    padding-top: 4%;
+}
+.form{
+        position: fixed;
+        width: 10%;
+    }
+    .gradient-button_01 {
+    margin: 0;
+    background: #232734a3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    font-size: larger;
+    transform: rotate(180deg);
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #3f2832ba 0%, #6c3f4da6 51%, #3f2832ba 100%);
+    background-size: 200% auto;
+    transition: .5s;
+    border: none;
+    }
+    .gradient-button_01:after{
+        content: "\27A0"; 
+    }
+    .gradient-button_01:hover{
+      background-position: right center;
     }
     #ggg{
         width: 43%;
@@ -77,6 +118,23 @@
     filter: blur(4px);
     font-family: Noto Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
+@media screen and (max-width: 1000px) {
+        #cto{
+            display: none;
+        }
+        #logot_svet{
+            margin: 0;
+        }
+        #telep{
+            margin-top: 3%;
+            margin-right: 2%;
+        }
+    }
+    @media screen and (max-width: 1000px) and (min-width: 700px){
+        #telep{
+            font-size: 1.5rem;
+        }
+    }
     @media screen and (max-width: 1000px) {
         #fff1{
             margin-top: 15%;
@@ -193,10 +251,25 @@
     margin-left: 135%;
 }
     }
+    @media screen and (max-width: 450px){
+        .gradient-button_01{
+      padding: 14px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .form{
+        margin-top: -1.5%;
+    }
+    }
 </style>
 <body>
 <header id="hed"></header>
 <header id="header">
+    <div>
+        <form action="index12.html" class="form">
+            <button class="gradient-button_01" type="submit" style="margin: 0;position:absolute;"></button>
+        </form>
+    </div>
     <nav>
         <div><img id="logot_svet" src="img/Site-logo.png">
         <img id="logot_temno" src="img/Site-logo2.png"></div>

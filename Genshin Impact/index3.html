@@ -21,6 +21,46 @@
         width: 100%;
         color: #000001;
     }
+    .form{
+        position: fixed;
+        margin: -2%;
+        margin-left: -9%;
+        width: 10%;
+    }
+    .gradient-button_01 {
+    margin: 0;
+    background: #232734a3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    font-size: larger;
+    transform: rotate(180deg);
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #010123 0%, #7cc8f9 51%, #010123 100%);
+    background-size: 200% auto;
+    transition: .5s;
+    }
+    .gradient-button_01:after{
+        content: "\27A0"; 
+    }
+    .gradient-button_01:hover{
+      background-position: right center;
+    }
+    @media screen and (max-width: 450px) {
+    .gradient-button_01{
+      padding: 14px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .form{
+      margin-top: -8%;
+      margin-left: -12%;
+      z-index: 1;
+    }
+    }
     @media screen and (max-width: 700px) {
         :root{
         height: 3900px;
@@ -39,9 +79,12 @@
       font-size: large;
     }
     .gradient-button{
-        margin-left: 16%;
-        margin-top: 140%;
+        margin-left: 20%;
+        margin-top: 105%;
         }
+    #header{
+        padding: 6% 10% 3% 10%;
+    }
 }
 @media screen and (max-width: 1000px) and (min-width: 701px) {
         :root {
@@ -53,8 +96,14 @@
             height: 3800px;
         }
         .gradient-button{
-          margin-left: 20%;
-        margin-top: 130%;
+            margin-left: 20%;
+            margin-top: 105%;
+        }
+    }
+    @media screen and (max-width: 380px){
+        .gradient-button{
+            margin-left: 15%;
+            margin-top: 120%;
         }
     }
     @media screen and (max-width: 325px){
@@ -63,13 +112,13 @@
         }
         .gradient-button{
           margin-left: 10%;
-          margin-top: 165%;
+          margin-top: 145%;
         }
     }
     @media screen and (min-width: 1300px){
 	.gradient-button{
-		margin-left: 35%;
-    margin-top: 30%;
+		margin-left: 30%;
+    margin-top: 25%;
 	}
   :root {
     height: 7000px;
@@ -82,6 +131,11 @@
 <body>
 <main>
 <header id="header">
+    <div>
+        <form action="index1.html" class="form">
+            <button class="gradient-button_01" type="submit" style="margin: 0;position:absolute;border: none;"></button>
+        </form>
+    </div>
     <nav>
         <div><img id="logot_svet" src="img/Site-logo.png">
         <img id="logot_temno" src="img/Site-logo2.png"></div>

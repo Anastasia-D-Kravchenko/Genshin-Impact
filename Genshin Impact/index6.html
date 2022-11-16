@@ -49,13 +49,62 @@
   #im{
     border-radius: 9999px;
   }
+  ::-webkit-scrollbar {
+    width: 18px;/*вертикальний */
+    height: 10px;/*горизонтальний */
+    background-color: #9864c3;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #debbff;
+    border-radius: 6px;
+}
+  .gradient-button_01 {
+    margin: 0;
+    background: #232734a3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 30px;
+    font-size: larger;
+    transform: rotate(180deg);
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #ac6ad8 0%, #dcbcfd 51%, #ac6ad8 100%);
+    background-size: 200% auto;
+    transition: .5s;
+    }
+    .gradient-button_01:after{
+        content: "\27A0"; 
+    }
+    .gradient-button_01:hover{
+      background-position: right center;
+    }
+    .form{
+        position: fixed;
+        margin: -2%;
+        margin-left: -9%;
+        width: 10%;
+    }
+    @media screen and (max-width: 450px) {
+    .gradient-button_01{
+      padding: 14px;
+      padding-bottom: 9px;
+      padding-top: 9px;
+    }
+    .form{
+      margin-top: -7%;
+    }
+    }
   @media screen and (max-width: 700px) {
       .osnova{
 			margin: 0;
       margin-top: 45%;
 		}
     :root{
-      height: 1100px;
+      height: 1400px;
       margin-left: -1%;
     margin-top: -1%;
     }
@@ -97,6 +146,11 @@
 </style>
 <body>
 <header id="header">
+  <div>
+  <form action="index4.html" class="form">
+      <button class="gradient-button_01" type="submit" style="margin: 0;position:absolute;"></button>
+  </form>
+</div>
   <nav>
     <div><img id="logot_svet" src="img/Site-logo.png">
     <img id="logot_temno" src="img/Site-logo2.png"></div>
@@ -110,53 +164,58 @@
     <a id="a" href="index4.html">Characters</a>
     <a id="a" href="">Weapons</a>
     <a id="a" href="">Nabory</a></div>
+</div>
     <!--  <form>
       <input type="text" id="myInput" onkeyup="myFunctio()" placeholder="Type in a name..." title="Type in a name" style="margin-top:33px; margin-left: 5px;"><img src="img/search--v1.png" id="poisk">
       </form>  -->
     <!-- <button class="temno" onclick="cli()"><img src="img/pngwing.com (1).png" id="ty"></button>
     <button class="svet" onclick="cli1()"><img src="img/57d9848d083d815729adc6ea.png" id="ty"></button> -->
   </nav>
-  <h1 style="margin-top: 14%;color: #ccfefe;margin-left: 10%;line-height: 140%;display: flex;align-items: center;position: absolute;"><img src="img/Cryo.png" style="padding-right: 5%;">Cryo Characters</h1>
+  <h1 style="margin-top: 14%;color: #debaff;;margin-left: 10%;line-height: 140%;display: flex;align-items: center;position: absolute;"><img src="img/Electro.png" style="padding-right: 5%;">Electro Characters</h1>
   <div class="osnova">
     <div id="pers1">
-      <img src="img/ganyu_portrait.jpg" id="im">
-      <h3>Gan yu</h3>
+      <img src="img/raiden_shogun_portrait.jpg" id="im">
+      <h3>Raiden</h3>
     </div>
     <div id="pers1">
-      <img src="img/qiqi_portrait.jpg" id="im">
-      <h3>Qi Qi</h3>
+      <img src="img/yae_miko_portrait.jpg" id="im">
+      <h3>Yae Miko</h3>
     </div>
     <div id="pers1">
-      <img src="img/kamisato_ayaka_portrait.jpg" id="im">
-      <h3>Ayaka</h3>
+      <img src="img/keqing_portrait.jpg" id="im">
+      <h3>Keqing</h3>
     </div>
     <div id="pers1">
-      <img src="img/shenhe_portrait.jpg" id="im">
-      <h3>Shen He</h3>
+      <img src="img/kujou_sara_portrait.jpg" id="im">
+      <h3>Sara</h3>
     </div>
     <div id="pers1">
-      <img src="img/eula_portrait.jpg" id="im">
-      <h3>Eola</h3>
+      <img src="img/razor_portrait.jpg" id="im">
+      <h3>Razor</h3>
     </div>
     <div id="pers1">
-      <img src="img/diona_portrait.jpg" id="im">
-      <h3>Diona</h3>
+      <img src="img/dori_portrait.jpg" id="im">
+      <h3>Dori</h3>
     </div>
     <div id="pers1">
-      <img src="img/chongyun_portrait.jpg" id="im">
-      <h3>Chongyun</h3>
+      <img src="img/beidou_portrait.jpg" id="im">
+      <h3>Beidou</h3>
     </div>
     <div id="pers1">
-      <img src="img/kaeya_portrait.jpg" id="im">
-      <h3>Kaeya</h3>
+      <img src="img/fischl_portrait.jpg" id="im">
+      <h3>Fischl</h3>
     </div>
     <div id="pers1">
-      <img src="img/rosaria_portrait.jpg" id="im">
-      <h3>Rosaria</h3>
+      <img src="img/kuki_shinobu_portrait.jpg" id="im">
+      <h3>Kuki Shinobu</h3>
     </div>
     <div id="pers1">
-      <img src="img/aloy_portrait.jpg" id="im">
-      <h3>Aloy</h3>
+      <img src="img/lisa_portrait.jpg" id="im">
+      <h3>Lisa</h3>
+    </div>
+    <div id="pers1">
+      <img src="img/traveler_anemo_portrait.jpg" id="im">
+      <h3>Traveller<br>(Electro)</h3>
     </div>
     <div>
       <form action="index4.html">

@@ -40,6 +40,28 @@
     p{
         font-size: large;
     }
+    form{
+        position: fixed;
+    }
+    .gradient-button{
+        margin: 0;
+        background: #171a21ab;
+        border: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 32px;
+        font-size: larger;
+        transform: rotate(180deg);
+        padding: 11px 23px;
+        padding-bottom: 16px;
+    }
+    .gradient-button::after{
+        content: "\27A0"; 
+    }
+    .gradient-button:hover{
+        background: #0000006e;
+    }
     @media screen and (max-width: 570px) {
         :root{
         height: 100%;
@@ -63,6 +85,9 @@
         }
         .cate{
             margin-top: 15%;
+        }
+        #img:hover{
+            width: 18%;
         }
     }
     @media screen and (max-width: 800px) and (min-width: 571px){
@@ -224,6 +249,14 @@
     <h1>Burning</h1>
     <p>When Pyro interacts with Dendro, Burning occurs. It deals permanent damage to Pyro.</p>
     </div>
+    <div style="display:flex;justify-content: space-between;">
+        <form action="index3.html">
+      <button class="gradient-button" type="submit"></button>
+        </form>
+        <!-- <form action="index3.html">
+            <button class="gradient-button plus" type="submit"></button>
+              </form> -->
+      </div>
     <div class="three"><h1>Elements</h1></div>
     <div id="now"><div class="cate" style="width: 99%;display: flex;align-items: center;justify-content: center;flex-direction: row;margin-top: 4%;">
         <img src="img/CutPaste_2022-11-07_22-20-50-352.png" id="img" onmouseover="Anemo()" onclick="location.href='index5.html';">

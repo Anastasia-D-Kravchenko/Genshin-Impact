@@ -29,8 +29,6 @@ body{
 	width: 25%;
     display: block;
     float: left;
-	padding-left: 5%;
-    padding-top: 4%;
 }
 #logot_temno{
 	width: 10%;
@@ -136,6 +134,7 @@ body{
 	margin-left: 30%;
 	margin-top: 20%;
 	z-index: 100;
+	font-size: smaller;
 }
 .gradient-button:hover {
 	background-position: right center;
@@ -160,6 +159,7 @@ body{
 }
 #a:hover{
 	border-top: 4px solid yellow;
+	margin-top: -1%;
 }
 #myInput {
 	background-position: 10px 12px;
@@ -885,8 +885,6 @@ tr{
 #cto{
     display: flex;
     flex-direction: row;
-	padding-right: 2%;
-    padding-top: 2%;
 }
 #elem1{
     display: flex;
@@ -1047,7 +1045,7 @@ tr{
 }
 @media screen and (min-width: 1300px){
 	.gradient-button{
-		margin-left: 35%;
-    margin-top: 30%;
+		margin-left: 30%;
+    margin-top: 25%;
 	}
 }
