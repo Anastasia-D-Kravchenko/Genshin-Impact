@@ -1,0 +1,290 @@
+/* *{
+    overflow-x: clip;
+} */
+:root{
+    overflow-x: clip;
+    height: auto;
+}
+/*скроллбар*/
+::-webkit-scrollbar {
+    width: 18px;/*вертикальний */
+    height: 10px;/*горизонтальний */
+    background-color: #1e212c;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #6a7390;
+    border-radius: 6px;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+    background-color: #484e61;
+} */
+
+/* Стрелки */
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background:
+        linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background:
+        linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background:
+        linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+        linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #f6f8f4;
+}
+body{
+    color: rgb(156 163 175/var(--tw-text-opacity));
+    background: #1a1d27;
+    box-sizing: border-box;
+}
+#header{
+    padding: 0;
+}
+#im,#im1,#im2{
+    --tw-bg-opacity: 1;
+    background-color: rgb(35 39 52/var(--tw-bg-opacity));
+    padding: 0.25rem;
+    --tw-border-opacity: 1;
+    border-color: rgb(17 24 39/var(--tw-border-opacity));
+    border-width: 1px;
+    border-radius: 9999px;
+    margin-top: 10%;
+    margin-left: 10%;
+    float: left;
+}
+.div,.div1,.div2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+#da,#da1,#da2{
+    width: 30%;
+    height: 100%;
+    margin-top: 5%;
+    color: rgb(156 163 175/var(--tw-text-opacity));
+    background: #2327349c;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border: 2px solid #2b323f;
+    border-radius: 2%;
+    font-family: Noto Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-top: -4%;
+}
+#div2,#div21,#div22{
+    margin-top: 7%;
+    padding: 3%;
+}
+h4{
+    font-weight: 700;
+    color: #bcc2cc;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+#p{
+    color: #939aa6;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    padding-bottom: 5%;
+}
+.top,.top1,.top2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: 100%;
+    width: 100%;
+    padding-top: 20%;
+}
+#da_ny,#da_ny1,#da_ny2{
+    background-size: 100%;
+    height: 200px;
+    padding: 0;
+    width: 100%;
+    border-radius: 2%;
+}
+aside{
+    width: 100%;
+    height: 100%;
+    margin-left: 2%;
+    margin-top: 5%;
+    color: rgb(156 163 175/var(--tw-text-opacity));
+    --tw-text-opacity: 1;
+}
+#elem{
+    display: block;
+    background: #232734;
+    padding: 2%;
+    border-radius: 15px;
+    border: 2px solid #2b3341;
+    width: 92%;
+}
+h6{
+    color: #9ca3af;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 1% 0 5% 0;
+}
+#imi{
+    background-image: url(https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/bg_5star.png?strip=all&quality=100);
+    background-size: cover;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    padding-top: 4.9%;
+    padding-bottom: 4.9%;
+    float: left;
+}
+#imi1{
+    background: url(https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/bg_4star.png?strip=all&quality=100);
+    background-size: cover;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    padding-top: 4.1%;
+    padding-bottom: 4.2%;
+    float: left;
+}
+#p2{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 100;
+    color: #9ca3af;
+    margin-left: 10%;
+    overflow-y: auto;
+    max-height: 6rem;
+    margin: 0;
+    padding-left: 1.5%;
+    padding-top: 1%;
+}
+h5{
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 1%;
+    font-size: 17px;
+    color: whitesmoke;
+}
+#egi{
+    background: #1a1d27;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.dividi{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+#or{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #a7b1c1;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+#or1{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    height: 1px;
+    background: #36384a;
+}
+#bild{
+    width: 46%;
+}
+b{
+    background: #4b5563;
+    padding: 1.5%;
+    border-radius: 5px;
+}
+.p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    font-weight: 600; 
+    font-size: 17px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background: #1a1d27;
+    border-radius: 10px;
+}
+.divi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5%;
+}
+.pp{
+    font-weight: 100; 
+    font-size: 17px;
+    margin-left: 3%;
+}
+#huv{
+    --tw-bg-opacity: 1;
+    background-color: rgb(35 39 52/var(--tw-bg-opacity));
+    padding: 0.25rem;
+    --tw-border-opacity: 1;
+    border-color: rgb(17 24 39/var(--tw-border-opacity));
+    border-width: 1px;
+    border-radius: 9999px;
+    margin-top: 0;
+    margin-left: 0;
+    float: left;
+    width: 100%;
+}
+#huv:hover{
+    border: 4px solid #57607f;
+    width: 72px;
+    margin-bottom: 2.5%;
+    margin-top: 6%;
+}
+.pp1{
+    margin: 0;
+    font-weight: 100;
+    font-size: 15px;
+}
